@@ -1,0 +1,18 @@
+{
+  "patterns": [
+    {
+      "patternName": "agility_story",
+      "description": "Generate agile user stories and acceptance criteria.",
+      "fields": [
+        { "name": "topic", "label": "Topic", "type": "text" }
+      ]
+    },
+    {
+      "patternName": "raycast_yt",
+      "description": "Summarize a YouTube video via Raycast extension.",
+      "fields": [
+        { "name": "url", "label": "YouTube URL", "type": "url" }
+      ]
+    }
+  ]
+}
