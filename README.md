@@ -714,6 +714,16 @@ pnpm run dev
 
 ## or your equivalent
 ```
+### Electron UI
+
+A minimal Electron interface is available in the `electron/` directory. It lists all patterns and strategies and opens a page for each pattern using its required variables. The UI now includes search, descriptions, and a history tab.
+
+```bash
+cd electron
+npm install
+npm start
+```
+
 
 ### Streamlit UI
 

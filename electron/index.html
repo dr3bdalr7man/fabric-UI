@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Fabric Electron UI</title>
+    <style>
+      body { font-family: "Segoe UI", Tahoma, sans-serif; margin:0; display:flex; }
+      #sidebar { width:250px; background:#f3f3f3; overflow-y:auto; height:100vh; padding:1rem; }
+      #content { flex:1; padding:1rem; }
+      #search { width:100%; margin-bottom:0.5rem; padding:0.25rem; }
+      .tab { margin-right:1rem; cursor:pointer; display:inline-block; padding:0.5rem; }
+      .active { background:#ddd; }
+      input, textarea { width:100%; margin-bottom:0.5rem; }
+    </style>
+</head>
+<body>
+  <div id="sidebar">
+    <input id="search" placeholder="Search..." />
+    <h3>Patterns</h3>
+    <ul id="patternList"></ul>
+    <h3>Strategies</h3>
+    <ul id="strategyList"></ul>
+  </div>
+  <div id="content">
+    <div id="tabs">
+      <span class="tab active" data-tab="run">Run</span>
+      <span class="tab" data-tab="settings">Settings</span>
+      <span class="tab" data-tab="history">History</span>
+    </div>
+    <div id="tabContent"></div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
