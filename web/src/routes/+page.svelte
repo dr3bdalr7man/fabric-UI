@@ -38,3 +38,6 @@
   </div>
 {/if}
 
+<div class="flex justify-center mt-4">
+    <a href="/electron" class="btn variant-filled-primary">Electron UI</a>
+</div>
